@@ -1,13 +1,14 @@
-package pile
+package main
 
 import (
 	"os"
 	"strings"
 	"strconv"
 	"fmt"
+	"pile"
 )
 
-func Push_swap() {
+func Main() {
 	entre := os.Args[1]
 	pile_str := strings.Split(string(entre)," ")
 	fmt.Println("yes")
@@ -28,7 +29,7 @@ func Push_swap() {
 
 	if pile_a[0] > pile_a[1] {
 		fmt.Println("sa")
-		pile_a = Sa(pile_a)
+		pile_a = pile.Sa(pile_a)
 	}
 	
 }
