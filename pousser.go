@@ -1,6 +1,9 @@
 package pile
 
-func Pa(a []int, b []int) ([]int,[]int) {
+import "fmt"
+
+func Pa(a []int, b []int) ([]int, []int) {
+	fmt.Println("pa")
 	val := b[0]
 	var new []int
 	new = append(new, val)
@@ -10,7 +13,8 @@ func Pa(a []int, b []int) ([]int,[]int) {
 	return new, b[1:]
 }
 
-func Pb(a []int, b []int) ([]int,[]int) {
+func Pb(a []int, b []int) ([]int, []int) {
+	fmt.Println("pb")
 	val := a[0]
 	var new []int
 	new = append(new, val)
